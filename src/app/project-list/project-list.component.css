@@ -1,0 +1,15 @@
+.form{
+    width: 600px;
+    padding: 10px;
+}
+
+    #first {
+        float: left;
+        height: 300px;
+        
+    }
+    #second {
+        float: right;
+        width: 700px;
+       
+    }

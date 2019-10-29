@@ -1,0 +1,59 @@
+
+<div class="form" id="first">
+<form  (ngSubmit)="onsubmit()"  class="border border-dark">
+    <div class="row justify-content-center">
+      <div class="col-md-4" class="form-group form-group-lg">
+          <div><h2>ADD PROJECT</h2></div><hr>
+        <div class="form-group">
+          <label>Project Name</label>
+          <input [(ngModel)]="values.projectName" name="projectName" type="text"  class="form-control">
+        </div>
+        <div class="form-group">
+          <label>Description</label>
+          <input [(ngModel)]="values.description" name="description" type="text"  class="form-control">
+        </div>
+        <div class="form-group">
+          <label>Technology</label>
+          <input  [(ngModel)]="values.team" name="team" type="text"  class="form-control">
+        </div>
+        <div class="form-group">
+          <label>Team Name</label>
+          <input [(ngModel)]="values.technology"  name="technology" type="text"   class="form-control">
+        </div>
+        <button class="btn btn-primary">{{title}}</button>
+      </div>
+      </div>
+  </form>
+</div>
+
+ 
+ 
+  <div class="container" id="second">
+        <h2>Project List</h2>
+                
+        <table class="table table-bordered table-striped ">
+          <thead>
+            <tr>
+              <th>Project Name</th>
+              <th>Description</th>
+              <th>Technology</th>
+              <th>Team</th>
+              <th>Delete</th>
+              <th>Edit</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let obj of data; let j=index">
+              <td>{{obj.projectName}}</td>
+              <td>{{obj.description}}</td>
+              <td>{{obj.team}}</td>
+              <td>{{obj.technology}}</td>
+              <td><a class=" btn btn-danger text-white" (click)="delete(obj)">Delete</a></td>
+              <td><a class=" btn btn-primary text-white" (click)="edit(obj,j)">Edit</a></td>
+            </tr>
+           
+          </tbody>
+        </table>
+      </div>
+      
+  
