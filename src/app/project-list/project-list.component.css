@@ -13,3 +13,48 @@
         width: 700px;
        
     }
+    .title{
+        text-align: center;
+        padding-bottom: 10px;
+        color: blue
+    }
+/*Search*/
+    * {
+        box-sizing: border-box;
+      }
+      
+      /* Style the search field */
+      form.example input[type=text] {
+        padding: 10px;
+        font-size: 12px;
+        border: 1px solid grey;
+        float: left;
+        width: 20%;
+        background: #f1f1f1;
+      }
+      
+      /* Style the submit button */
+      form.example button {
+        float: left;
+        width: 13.3%;
+        height: 8%;
+        padding: 10px;
+        padding-left: 10px;
+        background: #2196F3;
+        color: white;
+        font-size: 12px;
+        border: 1px solid grey;
+        border-left: none; /* Prevent double borders */
+        cursor: pointer;
+      }
+      
+      form.example button:hover {
+        background: #0b7dda;
+      }
+      
+      /* Clear floats */
+      form.example::after {
+        content: "";
+        clear: both;
+        display: table;
+      }

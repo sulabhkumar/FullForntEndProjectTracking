@@ -1,0 +1,22 @@
+<button type="submit" class="btn btn-primary" [routerLink]="['']">HOME</button>
+ <hr>
+<div class="searchTable">
+<table class="table table-bordered table-striped ">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Email</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let obj of data; let j=index">
+        <td>{{obj.name}}</td>
+        <td>{{obj.address}}</td>
+        <td>{{obj.email}}</td>
+      </tr>
+     
+    </tbody>
+  </table>
+  </div>

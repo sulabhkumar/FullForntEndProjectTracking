@@ -64,7 +64,7 @@ export class ProjectListComponent implements OnInit {
   delete(obj)
   {
     console.log("Delete obj-->",obj);
-   // this.projectarray.splice(j);
+   
    this.SharedserviceService.deleteData(obj).subscribe(data=>
     {
       this.getData();
@@ -73,7 +73,7 @@ export class ProjectListComponent implements OnInit {
   }
   edit(obj,index)
   {
-    console.log("obj-->",obj)
+    console.log("obj-->",obj)  
     this.title='Update'
     this.values.projectName=obj.projectName;
     this.values.description=obj.description;
@@ -83,6 +83,8 @@ export class ProjectListComponent implements OnInit {
    
       this.activeIndex=index;
   }
+
+  
 
 
 }

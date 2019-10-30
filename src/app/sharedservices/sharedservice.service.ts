@@ -53,4 +53,43 @@ createData(info)
         )
     )
   }
+
+
+  getOne(id){
+    return this.http.get('http://localhost:8080/Demo/webresources/search/'+id).pipe(map(res=>
+    {
+      return res
+    }
+    )
+   )
+
+  }
+
+  getTeam(team){
+    return this.http.get('http://localhost:8080/Demo/webresources/team/'+team).pipe(map(res=>
+    {
+      return res
+    }
+    )
+   )
+
+  }
+  getEmployee(employee){
+    return this.http.get('http://localhost:8080/Demo/webresources/employee/'+employee).pipe(map(res=>
+    {
+      return res
+    }
+    )
+   )
+
+  }
+
+  getTechnology(technology){
+    return this.http.get('http://localhost:8080/Demo/webresources/tech/'+technology).pipe(map(res=>
+    {
+      return res
+    }
+    )
+   )
+  }
 }  

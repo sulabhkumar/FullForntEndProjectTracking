@@ -6,11 +6,19 @@ import { AppComponent } from './app.component';
 import { ProjectListComponent } from './project-list/project-list.component';
 import { SharedserviceService } from './sharedservices/sharedservice.service';
 import {HttpClientModule} from '@angular/common/http';
+import { SearchComponent } from './search/search.component';
+import { TeamComponent } from './team/team.component';
+import { EmployeeComponent } from './employee/employee.component';
+import { TechnologyComponent } from './technology/technology.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProjectListComponent
+    ProjectListComponent,
+    SearchComponent,
+    TeamComponent,
+    EmployeeComponent,
+    TechnologyComponent
   ],
   imports: [
     BrowserModule,
